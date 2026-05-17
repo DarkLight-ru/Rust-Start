@@ -1,8 +1,8 @@
 fn main() {
-    let mut number;
+    let number;
     let name = input_text();
     loop {
-        let text = input_text();
+       let text = input_text();
         let parse_result = text.trim().parse::<i32>();
 
         match parse_result {
@@ -19,6 +19,7 @@ fn main() {
     println!("hello, {}!", name);
     println!("double num: {}", number);
 }
+
 
 fn input_text() -> String {
     let mut input = String::new();
